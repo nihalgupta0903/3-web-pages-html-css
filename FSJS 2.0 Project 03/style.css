@@ -1,2 +1,133 @@
 /* You can not modify anything from the HTML file */
 /* You can only modify the CSS file */
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+section:nth-child(1)
+{
+    width:100%;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:30px 100px;
+}
+ul {
+    list-style-type: none;
+    font-size:28px;
+}
+
+.list{
+    display: flex;
+    gap:80px;
+}
+.button-group{
+    display:flex;
+    align-items: center;
+}
+.search-icon{
+    padding-right:13px;
+}
+.nav-button{
+    padding:8px 55px;
+    font-size:28px;
+    border:3px solid black;
+    border-radius: 15px;
+    background-color: #ffffff;
+    color:rgba(0, 0, 0, 0.699);
+}
+.list-item:nth-child(1){
+   font-weight: 900;
+}
+.list-item:nth-child(1)::after{
+    content: "";
+    width: 60px;
+    transform: translateX(6px);
+    background-color: black;
+    border: 2px solid black;
+    display: block;
+ }
+ .hero-container{
+    padding:80px 100px 30px 100px;
+    display: flex;
+    position: relative;
+    gap:120px;
+ }
+ .hero-container div:first-of-type{
+    position: absolute;
+ }
+ .square{
+    position: relative;
+    top: 330px;
+    left: 240px;
+ }
+ .star {
+    position: absolute;
+    right: 80px;
+    top: 70px; 
+}
+.star + .star {
+    position: absolute;
+    top: 125%;
+    left: 45%;
+} 
+.globe{
+    position:absolute;
+    top: 0px;
+    right:780px;
+} 
+.hero-container-right{
+   padding:100px 150px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   position: relative;
+}
+.hero-heading{
+    font-size: 70px;
+}
+.hero-description{
+    color:rgba(0, 0, 0, 0.699);
+    max-width: 80%;
+    font-size: 19px;
+    margin: auto;
+    margin-top:75px;
+    line-height: 25px;
+}
+.contact-heading{
+    position: relative;
+    top: 330px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.icons{
+    position: absolute;
+    top: 700px;
+    display: flex;
+    gap: 20px;
+    margin-left: 291px;
+}
+.hero-btn{
+    top: 450px;
+    left:370px;
+    display: flex;
+    gap: 20px;
+}
+.button-email{
+    padding:3px 22px;
+    border:2px solid rgba(0, 0, 0, 0.699);
+    color:rgba(0, 0, 0, 0.699);
+}
+.button-join{
+    padding:3px 5px;
+    border: 2px solid black;
+    background-color: black;
+    color: #ffffff;
+}
+.button-email ,.button-join{
+    font-size: 25px;
+    border-radius: 10px;
+}
